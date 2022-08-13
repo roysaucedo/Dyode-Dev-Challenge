@@ -22,7 +22,7 @@ h2 {
     font-weight: 300;
     line-height: 35px;
     letter-spacing: 0em;
-    text-align: center;
+    
     
 }
 
@@ -62,12 +62,24 @@ p {
     text-align: center;
  }
 
+ .text-link {
+    text-decoration: none;
+    color: white;
+    font-size: .8rem;
+    margin-bottom: 10px;
+ }
+
  /* USEFUL CLASSES */
  .flex-div {
     display: flex;
 }
 
 .flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-column-center {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -201,16 +213,19 @@ nav {
 .collection-card-1 > div > h2 {
     padding: 10px;
     font-size: 1.2rem;
+    text-align: center;
 }
 
 .collection-card-2 > div > h2 {
     padding: 10px;
     font-size: 1.2rem;
+    text-align: center;
 }
 
 .collection-card-3 > div > h2 {
     padding: 10px;
     font-size: 1.2rem;
+    text-align: center;
 }
 
 
@@ -257,4 +272,41 @@ nav {
 
 .email-input-section>p {
     margin-bottom: 50px;
+}
+
+/* FOOTER */
+footer {
+    padding: 20px;
+}
+
+footer>div>h2{
+    margin-bottom: 20px;
+}
+
+.panel {
+    display: none;
+}
+
+.panel>a {
+    margin-right: 20px;
+
+}
+
+.accordion {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    transition: 0.4s;
+    margin-bottom: 20px;
+}
+
+.accordion > img {
+    width: 10px;
+    height: auto;
+}
+
+.social-links > a {
+    width: 10px;
+    height: auto;
+    margin-right: 20px;
 }
