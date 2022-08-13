@@ -14,3 +14,18 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+
+//SEARCH FORM
+
+let searchForm = document.getElementsByClassName("search-form-div")
+
+function displaySearchForm(){
+  if (searchForm.style.display === "flex") {
+    searchForm.style.display = "none";
+  } else {
+    searchForm.style.display = "flex";
+  }
+};
+
+// searchIcon.addEventListener("click", displaySearchForm)
