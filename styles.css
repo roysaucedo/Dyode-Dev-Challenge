@@ -19,7 +19,7 @@ h1 {
 h2 {
     font-family: Pacifico;
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 35px;
     letter-spacing: 0em;
     text-align: center;
@@ -30,7 +30,7 @@ h2 {
 p {
     font-family: Lato;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 17px;
     text-align: center;
 }
@@ -157,19 +157,66 @@ nav {
 
 /* COLLECTIONS */
 .collections-section {
-    padding: 20px;
+    margin: 10px;
+}
+
+.flex-div {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.collections-section:nth-child(1) {
-    flex-grow: 2;
+.collection-card-1 {
+    flex: 1;
+    margin: 5px;
 }
 
-.collections-section:nth-child(2) {
-    flex-grow: 2;
+
+.collection-card-2 {
+    flex: 1;
+    margin: 5px;
 }
 
-.collections-section:nth-child(3) {
-    flex-grow: 1;
+.collection-card-3 {
+    flex: 1;
+    margin: 5px;
 }
 
+
+
+.collection-card-1 > div > h2 {
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.collection-card-2 > div > h2 {
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.collection-card-3 > div > h2 {
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+
+.collection-card-img-1 {
+    min-height: 200px;
+    background-image: url(imgs/Womens\ Image\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.collection-card-img-2 {
+    min-height: 200px;
+    background-image: url(imgs/Mens\ Image\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.collection-card-img-3 {
+    min-height: 200px;
+    background-image: url(imgs/Accessories\ Image\ Mobile\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
