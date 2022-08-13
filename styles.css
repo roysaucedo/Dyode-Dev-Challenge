@@ -9,7 +9,7 @@ body {
 
 h1 {
     font-family: Pacifico;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 400;
     line-height: 46px;
     letter-spacing: 0em;
@@ -18,7 +18,7 @@ h1 {
 
 h2 {
     font-family: Pacifico;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 300;
     line-height: 35px;
     letter-spacing: 0em;
@@ -41,19 +41,37 @@ p {
 .button-primary {
    text-decoration: none;
    color: white;
-   padding: 15px 30px;
+   padding: 12px 25px;
    background-color: black; 
    text-transform: uppercase;
    letter-spacing: .1em;
    max-width: 150px;
-   font-size: 12px;
+   font-size: .8rem;
    text-align: center;
 }
 
-.button-text-mobile {
+.button-secondary {
+    text-decoration: none;
+    color: white;
+    padding: 12px 25px;
+    border: 1px solid white;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    max-width: 150px;
+    font-size: .8rem;
+    text-align: center;
+ }
 
+ /* USEFUL CLASSES */
+ .flex-div {
+    display: flex;
 }
 
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /* BACKGROUND COLORS */
 
@@ -150,8 +168,8 @@ nav {
     padding: 20px 0px;
 }
 
-.hero-text-div>* {
-    margin-bottom: 20px;
+.hero-text-div>p {
+    margin-bottom: 30px;
     
 }
 
@@ -160,11 +178,7 @@ nav {
     margin: 10px;
 }
 
-.flex-div {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
+
 
 .collection-card-1 {
     flex: 1;
@@ -219,4 +233,28 @@ nav {
     background-image: url(imgs/Accessories\ Image\ Mobile\ 1.png);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/* PRODUCT SECTION */
+
+.product-card {
+    padding: 20px 20px;
+}
+
+
+/* EMAIL SIGN UP */
+.email-input-section {
+    padding: 20px 20px;
+}
+
+.email-input-section>div {
+    margin-bottom: 10px;
+}
+
+.email-input-section>div>h2 {
+    margin-left: 10px;
+}
+
+.email-input-section>p {
+    margin-bottom: 50px;
 }
