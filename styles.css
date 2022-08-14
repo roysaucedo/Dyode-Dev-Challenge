@@ -64,7 +64,6 @@ p {
 
  .text-link {
     text-decoration: none;
-    color: white;
     font-size: .8rem;
     margin-bottom: 10px;
  }
@@ -143,6 +142,73 @@ p {
     text-transform: uppercase;
 }
 
+/* MOBILE MENU OVERLAY */
+.mobile-menu-background-div {
+    display: none;
+    width: 100%;
+    height: auto;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.8);;
+}
+
+.mobile-menu-content-div {
+    background-color: white;
+    width: 80%;
+    height: auto;
+    
+}
+
+.mobile-menu-accordion-div {
+    padding: 20px;
+}
+
+
+.mobile-menu-accordion-div>div {
+    margin-bottom: 40px;
+}
+.mobile-menu-accordion-div>div>a {
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.mobile-menu-exit-div {
+    display: flex;
+    justify-content: end;
+    padding: 20px;
+}
+
+.menu-nav-title {
+    text-transform: uppercase;
+    font-family: Lato;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 17px;
+    text-align: center;
+}
+
+.mobile-menu-nav-links-div {
+    padding: 20px;
+    background-color: #EFEFEF;
+
+}
+
+.mobile-menu-nav-links-div > div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    justify-content: space-between;
+}
+
+.mobile-menu-nav-links-div > div > a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
 /* NAV */
 .logo {
     height: 50px;
@@ -182,9 +248,29 @@ nav {
     justify-content: flex-end;
 }
 
+.nav-center {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-text-link {
+    display: none;
+    text-decoration: none;
+    color: white;
+    padding: 0px 20px;
+}
+
+.nav-text-link:hover {
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 2px;
+}
+
+
 /* SEARCH FORM */
 .search-form-div {
-    display: flex;
+    display: none;
     justify-content: center;
     position: absolute;
     z-index: 100;
@@ -384,6 +470,7 @@ footer>div>h2{
 
 
 
+
 /* Desktop Media Query */
 
 @media only screen and (min-width: 600px) {
@@ -396,5 +483,9 @@ footer>div>h2{
 
     .mobile-img {
         display: none;
+    }
+
+    .nav-text-link {
+        display: flex;
     }
   }

@@ -13,16 +13,17 @@ for (i = 0; i < acc.length; i++) {
       panel.style.display = "flex";
     }
   });
-}
+};
 
 
 
 //SEARCH FORM
 
-let searchForm = document.getElementsByClassName("search-form-div")
-let searchIcon = document.getElementById("search-icon")
+let searchForm = document.getElementById('search-form')
+let searchIcon = document.getElementById('search-icon')
 
 function displaySearchForm(){
+  
 
   if (searchForm.style.display === "flex"){
     searchForm.style.display = "none";
