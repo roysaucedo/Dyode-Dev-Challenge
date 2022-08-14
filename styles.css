@@ -106,6 +106,10 @@ p {
     text-align: center;
 }
 
+.text-left {
+    text-align: left;
+}
+
 .text-white {
     color: white;
 }
@@ -126,7 +130,7 @@ p {
 
 
 
-/* PAGE WRAPPER */
+PAGE WRAPPER
 .page-max-width {
     max-width: 1200px;
     margin: auto;
@@ -249,17 +253,18 @@ nav {
 }
 
 .nav-center {
+    width: 400px;
     padding: 0 20px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 .nav-text-link {
     display: none;
     text-decoration: none;
     color: white;
-    padding: 0px 20px;
+    padding: 0px 0px;
 }
 
 .nav-text-link:hover {
@@ -333,15 +338,29 @@ nav {
     align-items: center;
     padding: 20px 0px;
 }
+.hero-text-div>h1 {
+    margin-bottom: 10px;
+    
+}
 
 .hero-text-div>p {
     margin-bottom: 30px;
     
 }
 
+.desktop-hero-img-div {
+    display: none;
+}
+
+
+
 /* COLLECTIONS */
 .collections-section {
-    margin: 10px;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 
@@ -405,9 +424,29 @@ nav {
 }
 
 /* PRODUCT SECTION */
+.product-card-div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
 
 .product-card {
     padding: 20px 20px;
+}
+
+.product-card > * {
+    margin-bottom: 5px;
+}
+
+.product-title {
+    font-weight: 400;
+}
+
+.price-text {
+    font-family: Pacifico;
+    font-weight: 300;
+    color: #10504F;
 }
 
 
@@ -415,6 +454,7 @@ nav {
 .email-input-section {
     padding: 20px 20px;
 }
+
 
 .email-input-section>div {
     margin-bottom: 10px;
@@ -427,6 +467,23 @@ nav {
 .email-input-section>p {
     margin-bottom: 50px;
 }
+
+.email-form-desktop {
+    display: none;
+}
+
+.email-input-heading {
+    display: flex;
+    margin-bottom: 20px;
+}
+.email-input-section>div>p{
+    margin-bottom: 20px;
+}
+
+
+
+
+
 
 /* FOOTER */
 footer {
@@ -465,6 +522,10 @@ footer>div>h2{
     margin-right: 20px;
 }
 
+.desktop-footer {
+    display: none;
+}
+
 
 
 
@@ -473,7 +534,18 @@ footer>div>h2{
 
 /* Desktop Media Query */
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 800px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.4rem;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
     .hamburger-menu-icon {
         display: none;
     }
@@ -488,4 +560,109 @@ footer>div>h2{
     .nav-text-link {
         display: flex;
     }
+
+    .search-form-div {
+        margin-right: 0;
+        width: 300px;
+        
+    }
+
+    .desktop-section-padding {
+        padding: 40px 0px;
+    }
+
+    .email-form-desktop {
+        display: flex;
+        padding: 0px 40px;
+        
+    }
+    
+    .email-form-desktop form {
+        width: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 40px;
+    }
+    
+    .email-form-desktop input {
+        width: 80%;
+        padding: 10px;
+        border: none;
+        font-family: Lato;
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 17px;
+        border: none;
+    }
+    
+    .email-form-desktop button {
+        background-color: #10504F;
+        border: 1px solid white;
+        color: white;
+        border: none;
+        padding: 10px;
+        width: auto;
+        font-family: Lato;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 17px;
+        text-align: center;
+        margin-left: 10px;
+    }
+
+    .mobile-email-btn {
+        display: none;
+    }
+    .mobile-email-p {
+        display: none;
+    }
+
+    .mobile-footer {
+        display: none;
+    }
+
+    .desktop-footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 0px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .footer-items-left {
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+    }
+
+    .footer-items-left>div>h2 {
+        margin-bottom: 10px;
+    }
+
+    .footer-items-right>h2 {
+        margin-bottom: 10px;
+    }
+
+    .desktop-hero-img-div>h1 {
+        margin-bottom: 10px;
+        
+    }
+    
+    .desktop-hero-img-div>p {
+        margin-bottom: 30px;
+        
+    }
+
+    .desktop-hero-img-div {
+        width: 100%;
+        height: 800px;
+        background-color: #EFEFEF;
+        background-image: url(/imgs/HeroImage.png);
+        
+    }
+
+
+    
+
   }
