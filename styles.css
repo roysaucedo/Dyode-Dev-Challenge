@@ -361,6 +361,7 @@ nav {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    max-width: 1200px;
 }
 
 
@@ -422,6 +423,13 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.final-collection-card {
+    display: none;
+}
+
+
+
 
 /* PRODUCT SECTION */
 .product-card-div {
@@ -540,7 +548,7 @@ footer>div>h2{
     }
     
     h2 {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
     }
     
     p {
@@ -662,6 +670,43 @@ footer>div>h2{
         
     }
 
+    .mobile-full-width-collection {
+        display: none;
+    }
+
+    .final-collection-card {
+        display: block;
+    }
+
+    .collection-card-img-1 {
+        min-height: 500px;
+        background-image: url(imgs/Womens\ Image.png);
+    }
+    
+    .collection-card-img-2 {
+        min-height: 500px;
+        background-image: url(imgs/Mens\ Image.png);
+    }
+    
+    .collection-card-img-3 {
+        min-height: 500px;
+        background-image: url(imgs/Accessories\ Image.png);
+    }
+
+    .collection-card-1 > div > h2 {
+        font-size: 1.6rem;
+        padding: 20px;
+    }
+    
+    .collection-card-2 > div > h2 {
+        font-size: 1.6rem;
+        padding: 20px;
+    }
+    
+    .collection-card-3 > div > h2 {
+        font-size: 1.6rem;
+        padding: 20px;
+    }
 
     
 
