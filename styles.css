@@ -128,10 +128,16 @@ p {
 
 
 
-PAGE WRAPPER
+/* PAGE WRAPPER */
 .page-max-width {
     max-width: 1200px;
     margin: auto;
+}
+
+/* LINK BLOCK */
+.link-block{
+    text-decoration: none;
+    color: black;
 }
 
 
