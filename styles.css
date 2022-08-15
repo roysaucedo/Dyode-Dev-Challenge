@@ -336,13 +336,10 @@ nav {
     align-items: center;
     padding: 20px 0px;
 }
-.mobile-hero-text-div>h1 {
-    margin-bottom: 10px;
-    
-}
+
 
 .mobile-hero-text-div>p {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     
 }
 
@@ -485,11 +482,24 @@ nav {
 
 .email-input-heading {
     display: flex;
-    margin-bottom: 20px;
+    align-items: center;
+    margin-bottom: 30px;
 }
+
+.email-input-heading>h2 {
+    margin-left: 10px;
+}
+
+.email-input-heading>img {
+    width: auto;
+    height: 100%;
+}
+
 .email-input-section>div>p{
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    text-align: center;
 }
+
 
 
 
@@ -527,6 +537,10 @@ footer>div>h2{
     height: auto;
 }
 
+.social-links {
+    margin-top: 10px;
+}
+
 .social-links > a {
     width: 10px;
     height: auto;
@@ -551,7 +565,7 @@ footer>div>h2{
     }
     
     h2 {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
     }
     
     p {
@@ -579,7 +593,7 @@ footer>div>h2{
     }
 
     .desktop-section-padding {
-        padding: 40px 0px;
+        padding: 60px 0px;
     }
 
     .email-form-desktop {
@@ -644,7 +658,7 @@ footer>div>h2{
     .footer-items-left {
         display: flex;
         justify-content: space-between;
-        width: 300px;
+        width: 400px;
     }
 
     .footer-items-left>div>h2 {
