@@ -560,6 +560,7 @@ footer>div>h2{
 /* Desktop Media Query */
 
 @media only screen and (min-width: 800px) {
+    /* TEXT */
     h1 {
         font-size: 2.4rem;
     }
@@ -571,9 +572,16 @@ footer>div>h2{
     p {
         font-size: 1.2rem;
     }
+
+    /* DESKTOP SECTION PADDING */
+    .desktop-section-padding {
+        padding: 60px 0px;
+    }
+
     .hamburger-menu-icon {
         display: none;
     }
+
     .desktop-img {
         display: block;
     }
@@ -581,6 +589,8 @@ footer>div>h2{
     .mobile-img {
         display: none;
     }
+
+    /* NAV */
 
     .nav-text-link {
         display: flex;
@@ -592,9 +602,7 @@ footer>div>h2{
         
     }
 
-    .desktop-section-padding {
-        padding: 60px 0px;
-    }
+    /* EMAIL SECTION */
 
     .email-form-desktop {
         display: flex;
@@ -644,6 +652,7 @@ footer>div>h2{
         display: none;
     }
 
+    /* FOOTER */
     .mobile-footer {
         display: none;
     }
@@ -669,6 +678,8 @@ footer>div>h2{
     .footer-items-right>h2 {
         margin-bottom: 10px;
     }
+
+    /* DESKTOP HERO */
 
     .mobile-hero-text-div {
         display: none;
@@ -715,6 +726,8 @@ footer>div>h2{
         margin-bottom: 22px;
     }
 
+    /* COLLECTION GALLERY SECTION */
+
     .mobile-full-width-collection {
         display: none;
     }
@@ -752,6 +765,8 @@ footer>div>h2{
         font-size: 1.6rem;
         padding: 20px;
     }
+
+    /* FULL WIDTH IMAGE SECTION */
 
 
     .desktop-full-width-img-div {
@@ -801,8 +816,5 @@ footer>div>h2{
     .desktop-full-width-text-div>div>a {
         background-color: #10504F;
     }
-
-
-    
 
   }
