@@ -33,3 +33,21 @@ function displaySearchForm(){
 };
 
 searchIcon.addEventListener("click", displaySearchForm)
+
+//MOBILE MENU
+let hamburgerMenu = document.getElementById('hamburger-icon');
+let menuExit = document.getElementById('exit-menu-icon');
+let mobileMenu = document.getElementById('mobile-menu');
+
+//SHOW MOBILE MENU
+
+function displayMobileMenu (){
+  mobileMenu.style.display = "flex";
+}
+
+function hideMobileMenu (){
+  mobileMenu.style.display = "none";
+}
+
+hamburgerMenu.addEventListener("click", displayMobileMenu)
+menuExit.addEventListener("click", hideMobileMenu)

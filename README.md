@@ -14,5 +14,4 @@ https://dyode-dev-challenge.vercel.app/
 
 - Add Hero Slider
 - Add Product SLider
-- Finish Mobile Menu
 
